@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|c:\\users\\labsfiap\\desktop\\gs_.net_stormsafety\\stormsafety.api\\stormsafety.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|solutionrelative:stormsafety.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|c:\\users\\labsfiap\\desktop\\gs_.net_stormsafety\\stormsafety.api\\stormsafety.api\\controllers\\tipoocorrenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|solutionrelative:stormsafety.api\\controllers\\tipoocorrenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|c:\\users\\labsfiap\\desktop\\gs_.net_stormsafety\\stormsafety.api\\stormsafety.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|solutionrelative:stormsafety.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Migrations\\20250529135353_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StormSafety.API\\Migrations\\20250529135353_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|c:\\users\\labsfiap\\desktop\\gs_.net_stormsafety\\stormsafety.api\\stormsafety.api\\stormsafety.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|solutionrelative:stormsafety.api\\stormsafety.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|c:\\users\\labsfiap\\desktop\\gs_.net_stormsafety\\stormsafety.api\\stormsafety.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|solutionrelative:stormsafety.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|c:\\users\\labsfiap\\desktop\\gs_.net_stormsafety\\stormsafety.api\\stormsafety.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|solutionrelative:stormsafety.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|c:\\users\\labsfiap\\desktop\\gs_.net_stormsafety\\stormsafety.api\\stormsafety.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C55E092B-864D-4865-A67D-6172D875AC92}|StormSafety.API\\StormSafety.API.csproj|solutionrelative:stormsafety.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +54,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TipoOcorrenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Controllers\\TipoOcorrenciaController.cs",
+              "RelativeDocumentMoniker": "StormSafety.API\\Controllers\\TipoOcorrenciaController.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Controllers\\TipoOcorrenciaController.cs",
+              "RelativeToolTip": "StormSafety.API\\Controllers\\TipoOcorrenciaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:55:33.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "StormSafety.API\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "StormSafety.API\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:55:00.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250529135353_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Migrations\\20250529135353_Inicial.cs",
+              "RelativeDocumentMoniker": "StormSafety.API\\Migrations\\20250529135353_Inicial.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Migrations\\20250529135353_Inicial.cs",
+              "RelativeToolTip": "StormSafety.API\\Migrations\\20250529135353_Inicial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:53:53.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StormSafety.API",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\StormSafety.API.csproj",
+              "RelativeDocumentMoniker": "StormSafety.API\\StormSafety.API.csproj",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\StormSafety.API.csproj",
+              "RelativeToolTip": "StormSafety.API\\StormSafety.API.csproj",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-29T13:52:05.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "OcorrenciaController.cs",
               "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Controllers\\OcorrenciaController.cs",
               "RelativeDocumentMoniker": "StormSafety.API\\Controllers\\OcorrenciaController.cs",
@@ -50,25 +118,28 @@
               "RelativeToolTip": "StormSafety.API\\Controllers\\OcorrenciaController.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAowA0AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T12:46:24.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T12:46:24.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Program.cs",
               "RelativeDocumentMoniker": "StormSafety.API\\Program.cs",
               "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Program.cs",
               "RelativeToolTip": "StormSafety.API\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACcAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T12:36:18.981Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\appsettings.json",
               "RelativeDocumentMoniker": "StormSafety.API\\appsettings.json",
@@ -76,12 +147,11 @@
               "RelativeToolTip": "StormSafety.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-29T12:34:10.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T12:34:10.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "StormSafety.API\\Data\\AppDbContext.cs",
@@ -94,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Ocorrencia.cs",
               "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Models\\Ocorrencia.cs",
               "RelativeDocumentMoniker": "StormSafety.API\\Models\\Ocorrencia.cs",
@@ -102,12 +172,11 @@
               "RelativeToolTip": "StormSafety.API\\Models\\Ocorrencia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T12:27:46.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T12:27:46.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "TipoOcorrencia.cs",
               "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Models\\TipoOcorrencia.cs",
               "RelativeDocumentMoniker": "StormSafety.API\\Models\\TipoOcorrencia.cs",
@@ -115,12 +184,11 @@
               "RelativeToolTip": "StormSafety.API\\Models\\TipoOcorrencia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T12:27:32.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T12:27:32.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GS_.NET_StormSafety\\StormSafety.API\\StormSafety.API\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "StormSafety.API\\Models\\Usuario.cs",
@@ -128,12 +196,7 @@
               "RelativeToolTip": "StormSafety.API\\Models\\Usuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T12:27:12.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-05-29T12:27:12.668Z"
             }
           ]
         }

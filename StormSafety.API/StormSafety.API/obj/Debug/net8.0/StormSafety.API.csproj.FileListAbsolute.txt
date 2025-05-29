@@ -119,3 +119,4 @@ C:\Users\labsfiap\Desktop\GS_.NET_StormSafety\StormSafety.API\StormSafety.API\ob
 C:\Users\labsfiap\Desktop\GS_.NET_StormSafety\StormSafety.API\StormSafety.API\obj\Debug\net8.0\StormSafety.API.pdb
 C:\Users\labsfiap\Desktop\GS_.NET_StormSafety\StormSafety.API\StormSafety.API\obj\Debug\net8.0\StormSafety.API.genruntimeconfig.cache
 C:\Users\labsfiap\Desktop\GS_.NET_StormSafety\StormSafety.API\StormSafety.API\obj\Debug\net8.0\ref\StormSafety.API.dll
+C:\Users\labsfiap\Desktop\GS_.NET_StormSafety\StormSafety.API\StormSafety.API\obj\Debug\net8.0\StormSafety.API.sourcelink.json
