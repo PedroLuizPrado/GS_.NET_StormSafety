@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gi/5lfOkeJysuB8bEBLk9OT+Fg18IL1qagp4GwnwyAg=",
+  "Source": "StormSafety.API",
+  "BasePath": "_content/StormSafety.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

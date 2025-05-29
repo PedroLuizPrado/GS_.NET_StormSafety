@@ -1,0 +1,6 @@
+@StormSafety.API_HostAddress = http://localhost:5285
+
+GET {{StormSafety.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
