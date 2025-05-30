@@ -2,11 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using StormSafety.API.Data;
 using StormSafety.API.Models;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace StormSafety.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [SwaggerTag("Registro de ocorrências relacionadas a desastres climáticos.")]
     public class OcorrenciaController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -16,8 +18,8 @@ namespace StormSafety.API.Controllers
             _context = context;
         }
 
-        // GET: api/Ocorrencia
         [HttpGet]
+        [SwaggerOperation(Summary = "Listar todas as ocorrências registradas")]
         public async Task<ActionResult<IEnumerable<Ocorrencia>>> GetAll()
         {
             return await _context.Ocorrencias
@@ -26,8 +28,8 @@ namespace StormSafety.API.Controllers
                 .ToListAsync();
         }
 
-        // GET: api/Ocorrencia/5
         [HttpGet("{id}")]
+        [SwaggerOperation(Summary = "Buscar ocorrência por ID")]
         public async Task<ActionResult<Ocorrencia>> GetById(int id)
         {
             var ocorrencia = await _context.Ocorrencias
@@ -41,11 +43,18 @@ namespace StormSafety.API.Controllers
             return ocorrencia;
         }
 
-        // POST: api/Ocorrencia
         [HttpPost]
-        public async Task<ActionResult<Ocorrencia>> Create(Ocorrencia ocorrencia)
+        [SwaggerOperation(
+            Summary = "Criar nova ocorrência",
+            Description = @"Exemplo de uso:
+{
+  ""descricao"": ""Rua completamente alagada após forte chuva"",
+  ""usuarioId"": 1,
+  ""tipoOcorrenciaId"": 1
+}")]
+        public async Task<ActionResult<Ocorrencia>> Create([FromBody] Ocorrencia ocorrencia)
         {
-            ocorrencia.DataHora = DateTime.Now; // seta data atual
+            ocorrencia.DataHora = DateTime.Now;
 
             _context.Ocorrencias.Add(ocorrencia);
             await _context.SaveChangesAsync();
@@ -53,32 +62,8 @@ namespace StormSafety.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = ocorrencia.Id }, ocorrencia);
         }
 
-        // PUT: api/Ocorrencia/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, Ocorrencia ocorrencia)
-        {
-            if (id != ocorrencia.Id)
-                return BadRequest();
-
-            _context.Entry(ocorrencia).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Ocorrencias.Any(o => o.Id == id))
-                    return NotFound();
-
-                throw;
-            }
-
-            return NoContent();
-        }
-
-        // DELETE: api/Ocorrencia/5
         [HttpDelete("{id}")]
+        [SwaggerOperation(Summary = "Excluir ocorrência por ID")]
         public async Task<IActionResult> Delete(int id)
         {
             var ocorrencia = await _context.Ocorrencias.FindAsync(id);

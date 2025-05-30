@@ -1,0 +1,6 @@
+C:\Users\USER\Desktop\GS_.NET_StormSafety\obj\Debug\net8.0\StormSafety.Tests.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\GS_.NET_StormSafety\obj\Debug\net8.0\StormSafety.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\GS_.NET_StormSafety\obj\Debug\net8.0\StormSafety.Tests.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\GS_.NET_StormSafety\obj\Debug\net8.0\StormSafety.Tests.AssemblyInfo.cs
+C:\Users\USER\Desktop\GS_.NET_StormSafety\obj\Debug\net8.0\StormSafety.Tests.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\GS_.NET_StormSafety\obj\Debug\net8.0\StormSafety.Tests.sourcelink.json
