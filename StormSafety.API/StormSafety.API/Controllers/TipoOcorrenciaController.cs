@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StormSafety.API.Data;
+using StormSafety.API.DTOs;
 using StormSafety.API.Models;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -32,10 +33,16 @@ namespace StormSafety.API.Controllers
 {
   ""nomeTipo"": ""Alagamento""
 }")]
-        public async Task<ActionResult<TipoOcorrencia>> Create([FromBody] TipoOcorrencia tipo)
+        public async Task<ActionResult<TipoOcorrencia>> Create([FromBody] TipoOcorrenciaCreateDTO dto)
         {
+            var tipo = new TipoOcorrencia
+            {
+                NomeTipo = dto.NomeTipo
+            };
+
             _context.TiposOcorrencias.Add(tipo);
             await _context.SaveChangesAsync();
+
             return CreatedAtAction(nameof(GetAll), new { id = tipo.Id }, tipo);
         }
     }

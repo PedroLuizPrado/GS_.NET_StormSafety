@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StormSafety.API.Data;
+using StormSafety.API.DTOs;
 using StormSafety.API.Models;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -59,8 +60,15 @@ namespace StormSafety.API.Controllers
   ""localizacao"": ""São Paulo, SP""
 }")]
         [SwaggerResponse(201, "Usuário criado com sucesso")]
-        public async Task<ActionResult<Usuario>> Create([FromBody] Usuario usuario)
+        public async Task<ActionResult<Usuario>> Create([FromBody] UsuarioCreateDTO dto)
         {
+            var usuario = new Usuario
+            {
+                Nome = dto.Nome,
+                Email = dto.Email,
+                Localizacao = dto.Localizacao
+            };
+
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
@@ -69,10 +77,15 @@ namespace StormSafety.API.Controllers
 
         [HttpPut("{id}")]
         [SwaggerOperation(Summary = "Atualizar dados do usuário")]
-        public async Task<IActionResult> Update(int id, Usuario usuario)
+        public async Task<IActionResult> Update(int id, [FromBody] UsuarioCreateDTO dto)
         {
-            if (id != usuario.Id)
-                return BadRequest();
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
+                return NotFound();
+
+            usuario.Nome = dto.Nome;
+            usuario.Email = dto.Email;
+            usuario.Localizacao = dto.Localizacao;
 
             _context.Entry(usuario).State = EntityState.Modified;
             await _context.SaveChangesAsync();

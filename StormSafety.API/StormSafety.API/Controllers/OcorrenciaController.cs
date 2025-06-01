@@ -2,7 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using StormSafety.API.Data;
 using StormSafety.API.Models;
+using StormSafety.API.Services;
+using StormSafety.API.DTOs;
 using Swashbuckle.AspNetCore.Annotations;
+using System.Text.Json;
 
 namespace StormSafety.API.Controllers
 {
@@ -12,10 +15,14 @@ namespace StormSafety.API.Controllers
     public class OcorrenciaController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly RabbitMQService _rabbit;
+        private readonly MLModelService _mlModel;
 
-        public OcorrenciaController(AppDbContext context)
+        public OcorrenciaController(AppDbContext context, RabbitMQService rabbit, MLModelService mlModel)
         {
             _context = context;
+            _rabbit = rabbit;
+            _mlModel = mlModel;
         }
 
         [HttpGet]
@@ -46,20 +53,42 @@ namespace StormSafety.API.Controllers
         [HttpPost]
         [SwaggerOperation(
             Summary = "Criar nova ocorrência",
-            Description = @"Exemplo de uso:
+            Description = @"Exemplo:
 {
   ""descricao"": ""Rua completamente alagada após forte chuva"",
   ""usuarioId"": 1,
-  ""tipoOcorrenciaId"": 1
+  ""tipoOcorrenciaId"": 2
 }")]
-        public async Task<ActionResult<Ocorrencia>> Create([FromBody] Ocorrencia ocorrencia)
+        public async Task<ActionResult<Ocorrencia>> Create([FromBody] OcorrenciaCreateDTO dto)
         {
-            ocorrencia.DataHora = DateTime.Now;
+            var novaOcorrencia = new Ocorrencia
+            {
+                Descricao = dto.Descricao,
+                UsuarioId = dto.UsuarioId,
+                TipoOcorrenciaId = dto.TipoOcorrenciaId,
+                DataHora = DateTime.Now
+            };
 
-            _context.Ocorrencias.Add(ocorrencia);
+            _context.Ocorrencias.Add(novaOcorrencia);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = ocorrencia.Id }, ocorrencia);
+            var json = JsonSerializer.Serialize(novaOcorrencia);
+            _rabbit.Publish(json);
+
+            return CreatedAtAction(nameof(GetById), new { id = novaOcorrencia.Id }, novaOcorrencia);
+        }
+
+        [HttpPost("prever")]
+        [SwaggerOperation(
+            Summary = "Prever tipo da ocorrência com base na descrição",
+            Description = @"Exemplo:
+{
+  ""descricao"": ""Ficamos sem energia após a tempestade""
+}")]
+        public ActionResult PreverTipo([FromBody] DescricaoInput input)
+        {
+            var tipo = _mlModel.PreverTipo(input.Descricao);
+            return Ok(new { TipoPrevisto = tipo });
         }
 
         [HttpDelete("{id}")]
@@ -74,6 +103,11 @@ namespace StormSafety.API.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        public class DescricaoInput
+        {
+            public string Descricao { get; set; }
         }
     }
 }

@@ -16,15 +16,15 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.ML" Version="4.0.2" />
 		<PackageReference Include="Oracle.EntityFrameworkCore" Version="8.23.80" />
+		<PackageReference Include="RabbitMQ.Client" Version="6.0.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Folder Include="Configurations\" />
-		<Folder Include="DTOs\" />
-		<Folder Include="Services\" />
 	</ItemGroup>
 
 </Project>

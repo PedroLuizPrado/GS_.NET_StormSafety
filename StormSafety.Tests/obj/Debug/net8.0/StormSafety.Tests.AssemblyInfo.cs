@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StormSafety.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ac4fdf9cfa64f912f54364ec03f9463c30cecad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11576950053ffdb87fef003ff59f760943bfec98")]
 [assembly: System.Reflection.AssemblyProductAttribute("StormSafety.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StormSafety.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

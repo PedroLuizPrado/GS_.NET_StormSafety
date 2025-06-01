@@ -1,25 +1,27 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StormSafety.API.Data;
 using Microsoft.OpenApi.Models;
+using StormSafety.API.Data;
+using StormSafety.API.Services;
 using Swashbuckle.AspNetCore.Annotations;
-using AspNetCoreRateLimit; 
+using AspNetCoreRateLimit;
+using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+// Controllers
 builder.Services.AddControllers();
 
-
+// Oracle
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection")));
 
-
+// Rate Limiting
 builder.Services.AddMemoryCache();
 builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection("IpRateLimiting"));
 builder.Services.AddInMemoryRateLimiting();
 builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
 
-
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -32,9 +34,13 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+// RabbitMQ e ML.NET services
+builder.Services.AddSingleton<RabbitMQService>();
+builder.Services.AddSingleton<MLModelService>(); // 🔍 Aqui o ML
+
 var app = builder.Build();
 
-
+// Banco
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
@@ -48,7 +54,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseIpRateLimiting(); 
+app.UseIpRateLimiting();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

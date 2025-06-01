@@ -66,9 +66,17 @@
               "target": "Package",
               "version": "[8.0.16, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
             "Oracle.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.23.80, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
